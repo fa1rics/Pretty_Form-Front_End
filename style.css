@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    text-shadow: 5px 5px 15px purple;
+}
+
+input {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+body {
+    background: url(/img/background.gif) no-repeat;
+    background-size: 100%;
+    letter-spacing: 0.5em;
+    font-family: 'Permanent Marker', cursive;;
+}
+
+#container {
+    margin: 250px auto;
+    width: 35%;
+    height: 400px;
+    background-color: grey;
+    border-radius: 50px;
+    animation:light 2.5s ease-in-out infinite;
+    opacity: 95%;
+}
+
+@keyframes light {
+    0% {
+        border: 10px solid whitesmoke;
+        border-top: 10px solid rgb(255, 4, 255);
+    }
+    25% {
+        border: 10px solid whitesmoke;
+        border-right: 10px solid rgb(255, 0, 255);
+    }
+    50% {
+        border: 10px solid whitesmoke;
+        border-bottom: 10px solid rgb(255, 0, 255);
+    }
+    75% {
+        border: 10px solid whitesmoke;
+        border-left: 10px solid rgb(255, 0, 255);
+    }
+    100% {
+        border: 10px solid whitesmoke;
+        border-top: 10px solid rgb(255, 4, 255);
+    }
+}
+
+#form-autorization {
+    margin: 30px auto;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#input-login {
+    width: 150px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+    animation: light-input 2.5s ease-in-out infinite;
+}
+
+#input-login:hover {
+    width: 150px;
+    height: 35px;
+}
+
+#input-password {
+    width: 150px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+    animation: light-input 2.5s ease-in-out infinite;
+}
+
+#input-password:hover {
+    width: 150px;
+    height: 35px;
+}
+
+@keyframes light-input {
+    0% {
+        border: 5px solid whitesmoke;
+        border-top: 5px solid rgb(255, 4, 255);
+    }
+    25% {
+        border: 5px solid whitesmoke;
+        border-right: 5px solid rgb(255, 0, 255);
+    }
+    50% {
+        border: 5px solid whitesmoke;
+        border-bottom: 5px solid rgb(255, 0, 255);
+    }
+    75% {
+        border: 5px solid whitesmoke;
+        border-left: 5px solid rgb(255, 0, 255);
+    }
+    100% {
+        border: 5px solid whitesmoke;
+        border-top: 5px solid rgb(255, 4, 255);
+    }
+}
+
+#form-btns {
+    margin: 30px auto;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btn-send {
+    width: 180px;
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+    background: none;
+    filter: brightness(80%);
+}
+
+#btn-send:hover {
+    filter: brightness(100%);
+    background-color: rgb(27, 236, 27);
+    box-shadow: 
+    10px 10px 30px rgb(27, 236, 27), 
+    10px 10px 30px rgb(27, 236, 27),
+    -10px -10px 30px rgb(27, 236, 27),
+    -10px -10px 30px rgb(27, 236, 27);
+}
+
+#btn-reset {
+    width: 180px;
+    height: 70px;
+    border-radius: 50px;
+    background: none;
+    border: none;
+    filter: brightness(80%);
+}
+
+#btn-reset:hover {
+    filter: brightness(100%);
+    background-color: red;
+    box-shadow: 
+    10px 10px 30px red, 
+    10px 10px 30px red,
+    -10px -10px 30px red,
+    -10px -10px 30px red;
+}
+
+@media (max-width: 1200px) {
+    body {
+        background-size: 100% 100%;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    #container {
+        width: 40%;
+        margin: 50% auto;
+    }
+    #form-autorization {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #form-btns {
+        width: 90%;
+    }
+}
+
+@media (max-width: 960px) {
+    body {
+        background-size: 100% 100%;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    #container {
+        width: 50%;
+        margin: 50% auto;
+    }
+    #form-autorization {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #form-btns {
+        width: 90%;
+    }
+}
+
+@media (max-width: 670px) {
+    body {
+        background-size: 100% 100%;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    #container {
+        width: 75%;
+        margin: 50% auto;
+    }
+    #form-autorization {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #form-btns {
+        width: 90%;
+    }
+}
