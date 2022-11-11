@@ -16,7 +16,7 @@ input {
 }
 
 body {
-    background: url(background.gif) no-repeat;
+    background: url(img/background.gif) no-repeat;
     background-size: 100%;
     letter-spacing: 0.5em;
     font-family: 'Permanent Marker', cursive;;
